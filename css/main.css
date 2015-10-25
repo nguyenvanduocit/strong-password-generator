@@ -81,7 +81,7 @@ html, body {
 }
 
 .advanced_options {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     display: none;
 }
 .advanced_options input{
@@ -94,7 +94,9 @@ html, body {
 }
 
 #mindigits {
-    width: 20px;
+    text-align: center;
+    width: 33px;
+    padding: 2px 0px
 }
 
 div.advanced_options div {
