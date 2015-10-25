@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         ambig: false
     };
     var currentOptions = {};
-    var prev_pass = 'NONE';
+    var prev_pass = null;
     /**
      * Define some UI
      * @type {Element}
@@ -21,6 +21,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
     var btn_generate = $('#btn-generate');
     var txt_password = $('#password_text');
     var txt_lastPass = $('#lastPass');
+    var lastPassContainer = $('#lastpass_container');
+
     loadOptionForm(onOptionLoaded);
     setupUI();
     /**
@@ -185,6 +187,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
          * Update text box
          */
         clipboard.on('success', function (e) {
+            if(prev_pass!=null){
+                lastPassContainer.slideDown();
+            }
             txt_lastPass.text(prev_pass);
             txt_password.val(e.text);
             prev_pass = e.text;
