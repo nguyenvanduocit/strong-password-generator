@@ -6,7 +6,9 @@ html, body {
     padding: 0;
     margin: 0;
 }
-
+*{
+    box-sizing: content-box;
+}
 .clearfix:after {
     visibility: hidden;
     display: block;
@@ -41,9 +43,9 @@ html, body {
 
 .password-input {
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.37);
+    background-color: rgba(255, 255, 255, 0.56);
     color: rgba(0, 0, 0, 0.63);
-    border: 1px solid #26A69A;
+    border: 1px solid rgba(38, 166, 154, 0.63);
     border-radius: 0;
     outline: none;
     height: 3rem;
@@ -82,7 +84,9 @@ html, body {
     margin-bottom: 20px;
     display: none;
 }
-
+.advanced_options input{
+    margin-right: 10px;
+}
 #btn_show_advanced {
     color: #7D7C7C;
     text-transform: uppercase;
@@ -156,7 +160,7 @@ button*/
 }
 
 .animated.heartbeat {
-    animation-duration: .55s;
+    animation-duration: .60s;
 }
 
 @keyframes bounceIn {
