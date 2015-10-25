@@ -1,0 +1,58 @@
+﻿<html>
+<head>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/clipboard.js"></script>
+    <script type="text/javascript" src="js/random.js"></script>
+    <script type="text/javascript" src="js/gpw.js"></script>
+    <script type="text/javascript" src="js/generator.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div class="container">
+    <p id="status" class="animated bounceIn">copyed to clipboard</p>
+    <input type="text" class="password-input form-field" id="password_text" readonly>
+    <div class="previous_pass">
+        <span>Previous : </span><span id="lastPass">N/A</span>
+    </div>
+    <div id="pw-formula" class="line-box">
+        <div class="btn-container form-field clearfix">
+            <button class="btn-generate btn" type="button" name="length" value="8">8 chars</button>
+            <button class="btn-generate btn" type="button" name="length" value="12">12 chars</button>
+        </div>
+        <div>
+            <a href="#" id="btn_show_advanced">Show advanced</a>
+        </div>
+        <div id="advanced_options" class="advanced_options">
+            <div>
+                <label><input type="radio" name="type" value="reqevery" id="reqevery">Allow All Character Types</label>
+            </div>
+            <div>
+                <label><input type="radio" name="type" value="pronounceable" id="pronounceable">Make Pronounceable</label>
+            </div>
+            <div>
+                <label><input type="checkbox" name="canUpper" id="canUpper">A-Z</label>
+            </div>
+            <div>
+                <label><input type="checkbox" name="canLower" id="canLower">a-z</label>
+            </div>
+            <div id="canDigital_container">
+                <label><input type="checkbox" name="canDigital" id="canDigital">0-9</label>
+            </div>
+            <div id="canSpecial_container">
+                <label><input type="checkbox" name="canSpecial" id="canSpecial">!$%@#</label><br>
+            </div>
+            <div>
+                <label><input type="checkbox" name="ambig" id="ambig">Avoid Ambiguous Characters</label>
+            </div>
+            <div id="mindigits_container">
+                <label>Minimum Numeric Characters : <input type="text" value="5" name="mindigits" id="mindigits"></label>
+            </div>
+        </div>
+    </div>
+    <button id="btn-generate" >Generate</button>
+    <a href="http://senviet.org" class="copyright">by Được Nguyễn</a>
+</div>
+</body>
+</html>

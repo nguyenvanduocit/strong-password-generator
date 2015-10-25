@@ -1,0 +1,21 @@
+﻿{
+	"name": "Strong Password Generator",
+	"version": "1.0.0",
+  	"manifest_version": 2,
+	"description": "Generate strong password for the most secret.",
+	"icons":{
+		"128":"images/icon128.png"
+	},
+  "browser_action": {
+	"default_icon": {
+	  "19": "images/icon24.png",
+	  "38": "images/icon48.png"
+	},
+	"default_title": "Strong Password Generator",
+	"default_popup": "main.html"
+  },
+  "permissions": [
+	"tabs",
+	"storage"
+  ]
+}
