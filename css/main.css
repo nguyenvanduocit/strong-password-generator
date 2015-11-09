@@ -109,7 +109,7 @@ div.advanced_options div {
     text-align: center;
     font-size: 20px;
     color: #26A69A;
-    font-weight: 700;
+    font-weight: normal;
     text-transform: uppercase;
 }
 
@@ -232,4 +232,13 @@ button*/
 }
 .copyright:hover{
     color: #5395ab;
+}
+
+.extension-title {
+    padding: 15px 0;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    background: #26A69A;
+    font-size: 17px;
 }
