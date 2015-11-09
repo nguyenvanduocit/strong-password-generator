@@ -1,8 +1,8 @@
 ﻿{
   "name": "Strong Password Generator",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "manifest_version": 2,
-  "description": "Generate strong password for the most secret.",
+  "description": "The fastest way to generate strong and highly secure passwords.",
   "icons": {
     "16": "images/icon16.png",
     "128": "images/icon128.png"
